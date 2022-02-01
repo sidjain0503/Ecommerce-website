@@ -1,5 +1,6 @@
 import React from 'react';
 import './Productpage.css'
+import camera from './camera_image.jpg';
 function Productpage() {
   return <div>
       {/* Nupur add code here  */
@@ -7,7 +8,7 @@ function Productpage() {
          <div className="body">
              <div className="Product_section">
                  <div className="Product_image">
-                     <img src="camera_image.jpg" alt="Camera"/>
+                     <img src={camera} alt="Camera"/>
                  </div>
                  <div className="product_details">   
                      <div className="product_name">

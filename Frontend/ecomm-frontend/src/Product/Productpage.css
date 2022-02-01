@@ -12,7 +12,7 @@
       object-fit: contain;
       margin-top: 100px;
       margin-left: 40px;
-      margin-right: 40px;
+      margin-right: 40px; 
   }
   
   .Product_section{
@@ -23,7 +23,7 @@
   .product_details
   {
      margin-right: 30px;
-     width: 800px;
+     width: 80%;
   }
   
   .cart_button {
@@ -124,8 +124,11 @@
       word-wrap: break-word;
   }
   
-  @media screen {
-      Page_section {
+  @media only screen and (max-width: 900px) {
+      .Product_section {
           flex-direction: column;
+      }
+      .product_details{
+          margin: auto;
       }
   }
