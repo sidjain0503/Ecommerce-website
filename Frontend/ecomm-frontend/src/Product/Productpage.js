@@ -4,7 +4,7 @@ function Productpage() {
   return <div>
       {/* Nupur add code here  */
          
-         <body>
+         <div className="body">
              <div className="Product_section">
                  <div className="Product_image">
                      <img src="camera_image.jpg" alt="Camera"/>
@@ -44,7 +44,7 @@ function Productpage() {
                      </div>
                  </div>
              </div>     
-         </body>
+         </div>
          
       }
   </div>;
