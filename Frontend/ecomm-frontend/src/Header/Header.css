@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300&display=swap');
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding-top: 0;
+        }
+
+        header{
+            display: flex;
+            justify-content: space-between;
+            color: white;
+            background-color: rgb(35, 47, 62);
+            padding: 10px;
+            text-align: center;
+            font-size: 18px;
+            margin: 0px;
+            font-family: montserrat;
+        }
+
+
+        a, button{
+            font-family: montserrat;
+            font-weight: 500;
+            font-size: 16px;
+            color: white;
+            text-decoration: none;
+            transition: all .3s ease 0s;
+            
+        }
+
+        a:hover{
+            transition: border 1px 1px;
+            border-color: white;
+        }
+
+        nav{
+            display: flex;
+            position: sticky;
+            top: 0px;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 5%;
+            background-color: rgb(55, 71, 90);
+        }
+
+        button{
+            color: white;
+            padding: 9px 25px;
+            background-color: rgb(228, 121, 17);
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all .3s ease 0s;
+        }
+
+        button:hover{
+            color: rgb(3, 1, 107);
+            background-color: rgba(0, 54, 214, .6);
+        }
+
+        input{
+            padding: 9px 25px;
+            border-radius: 50px;
+            color: rgb(160, 160, 160);
+            font-family: montserrat, sans-serif;
+            border: none;
+        }
+
+        #srch{
+            color: white;
+            padding: 9px 18px;
+            background-color: rgb(228, 121, 17);
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all .3s ease 0s;
+        }
+
+        #srch:hover{
+            background-color: rgba(228, 121, 17, .9);
+        }
+
+        main{
+            background-color: white;
+        }
+
+        section{
+            color: rgb(165, 165, 165);
+            padding: 40px;
+            text-align: center;
+            font-size: 22px;
+            margin: 0px;
+            font-family: montserrat;
+            
+        }
+        .opts{
+            font-size: 25px;
+            cursor: pointer;
+        }
+
+        select{
+            color: white;
+            padding: 9px 18px;
+            background-color: rgb(35, 47, 62);
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            font-family: montserrat;
+        }
