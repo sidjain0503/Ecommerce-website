@@ -1,0 +1,134 @@
+.body {
+  
+    margin-right: 10px;
+    margin-top: 40px;
+    margin-bottom: 50px;
+    font: poppins;
+  }
+  
+  .Product_image img{
+      width: 70%;
+      height: 70%;
+      object-fit: contain;
+      margin-top: 100px;
+      margin-left: 40px;
+      margin-right: 40px; 
+  }
+  
+  .Product_section{
+      display: flex;
+      justify-content: space-around;
+  }
+  
+  .product_details
+  {
+     margin-right: 30px;
+     width: 80%;
+  }
+  
+  .cart_button {
+      width: 190px;
+      height: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      background-color: red;
+      border-radius: 20px;
+      margin-left: 15px;
+      border: none;
+  }
+  
+  .cart_button:hover {
+      background-color: maroon;
+      transition: all ease 0.2s;
+  }
+  
+  .product_name{
+      border-bottom: 1px solid #ccc;
+      word-wrap: break-word;
+  }
+  
+  .product_reviews{
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 10px;
+      padding-top: 10px;
+  }
+  
+  .product_price
+  {
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 15px;
+  }
+  
+  .button-wrapper
+  {
+      display: flex;
+      margin-top: 30px;
+  }
+  
+  .button
+  {
+      height: 40px;
+      width: 25px;
+      color: white;
+      text-align: center;
+      background-color: grey;
+  }
+  
+  .button:hover {
+      background-color: black;
+      transition: all ease 0.2s;
+  }
+  
+  .number
+  {
+      padding-right: 10px;
+      padding-left: 10px; 
+  }
+  
+  .status
+  {
+      font-size: 20px;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 15px;
+  }
+  
+  .status span
+  {
+      color: rgba(128, 218, 45, 0.993);
+  }
+  
+  .review_button {
+      width: 190px;
+      height: 40px;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      background-color: red;
+      border-radius: 20px;
+      margin-top: 10px;
+      border: none;
+  }
+  
+  .review_button:hover {
+      
+      background-color: maroon;
+      transition: all ease 0.2s;
+  }
+  
+  .desc
+  {
+      display: block;
+      /* width: 600px; */
+      word-wrap: break-word;
+  }
+  
+  @media only screen and (max-width: 900px) {
+      .Product_section {
+          flex-direction: column;
+      }
+      .product_details{
+          margin: auto;
+      }
+  }

@@ -3,9 +3,7 @@ import './Header.css';
 
 function Header() {
   return <div>
-      {/* Aditya add your code here  */
-
-<body>
+      {/* Aditya add your code here  */}
 
 <header>
     <h1>Ecommmerce-website</h1>
@@ -44,10 +42,8 @@ function Header() {
 </nav>
 
 
-
-</body>
-      
-      }
+     
+      {/* Aditya add your code here  */}
   </div>;
 }
 
