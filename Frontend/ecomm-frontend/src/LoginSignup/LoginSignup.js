@@ -1,19 +1,29 @@
-import React from 'react';
+import React,{useState} from 'react';
 import './LoginSignup.css'
-import './background.jpg'
-var box=document.getElementById("box");
-            function openRegister(){
-                box.style.transform="rotateY(-180deg)";
-            }
-            function openLogin(){
-                box.style.transform="rotateY(0deg)";
-            }
+import ReactCardFlip from 'react-card-flip';
+
+import background from './background.jpg'
+
+
+
 function LoginSignup() {
+    
+    const [Flipped, setFlipped] = useState(false);
+
+    const handleflip=(e)=>{
+        e.preventDefault();
+        console.log("openregister")
+        setFlipped(!Flipped)
+
+    }
+    
+
+
   return <div>
-      {/* Ayushi : Write your code here */
+      {/* Ayushi : Write your code here */}
       <div className="login-register-container">
-      <div className="login-register-box">
-          <div className="inner-box" id="box">
+      <div className="login-register-box" style={{ backgroundImage: `url(${background})` }}>
+          <ReactCardFlip className="inner-box" isFlipped={Flipped} flipDirection="horizontal">
               <div className="front">
                   <h2>LOGIN</h2>
                   <form>
@@ -21,10 +31,10 @@ function LoginSignup() {
                       <input type="password" className="input-box" placeholder="Password" required/>
                       <button type="submit" className="submit-btn"> Submit </button>
                   </form>
-                      <button type="button" className="btn" onclick="openRegister()">New User? Register</button>
+                      <button type="button" className="btn" onClick={handleflip}>New User? Register</button>
                       <a href="">Forgot Password</a>
               </div>
-                  <div className="back">
+               <div className="back">
                       <h2>REGISTER</h2>
                       <form>
                           <input type="text" className="input-box" placeholder="Name" required/>
@@ -32,15 +42,16 @@ function LoginSignup() {
                           <input type="password" className="input-box" placeholder="Password" required/>
                           <button type="submit" className="submit-btn"> Submit </button>
                       </form>
-                          <button type="button" className="btn" onclick="openLogin()">Already have an account? Login</button>
+                          <button type="button" className="btn" onClick={handleflip}>Already have an account? Login</button>
                           <a href="">Forgot Password</a>
                       
                   </div>
               
-          </div>
+          </ReactCardFlip>
       </div>
-  </div>}
-  </div>;
+        </div>
+    </div>
+  
 }
 
 export default LoginSignup;
