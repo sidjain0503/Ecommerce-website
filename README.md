@@ -1,4 +1,4 @@
-#Tech-buy : Online tech store 
+# Tech-buy : Online tech store 
 
 A MERN stack ecommerce website . 
 
