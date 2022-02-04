@@ -7,7 +7,7 @@ import "./Cards.css";
 
 function Cards() {
   return (
-    <div>
+    <div className="cards">
       <Card1 />
       <Card1 />
       <Card2 />

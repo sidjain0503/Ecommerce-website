@@ -1,4 +1,4 @@
-div{
+.cards{
     display: flex;
     overflow: hidden;
     flex-flow: row wrap;
