@@ -1,14 +1,21 @@
 const express = require("express");
-const app = express();
 const mongoose = require("mongoose");
 const port = 8000;
-const Url = "mongodb://localhost:27017/";
-mongoose.connect(Url);
+const app = express();
+const productRouter = require('./Routes/ProductRoute')
 
-app.get("/", (req, res) => {
-  res.send("This is Express Server");
-  res.end();
+//connecting to database
+const Url = "mongodb://localhost:27017/";
+mongoose.connect(Url).then(()=>{
+  console.log("connected to database")
+}).catch((err)=>{
+  console.log("Error",err);
 });
+
+//route handling
+app.use("/product",productRouter);
+
+
 app.listen(port, () => {
   console.log("Express Server is listening on Port: " + port);
 });
