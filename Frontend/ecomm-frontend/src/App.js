@@ -16,11 +16,8 @@ function App() {
 
   return (
     <div className="App">
-      <Header />
+      <Header  />
        <Cards />
-      {/* <LoginSignup/> */} 
-      
-
     </div>
   );
 }
