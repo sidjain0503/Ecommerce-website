@@ -1,0 +1,139 @@
+.cart_container{
+    margin: 80px 20px;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+img{
+   object-fit: contain;
+   width: 100px;
+   height: 100px;
+   margin-right: 10px;
+   margin-top: 10px;
+}
+.cart_info{
+   display: flex;
+   flex-wrap: wrap;
+}
+th{
+    text-align: left;
+    padding: 15px;
+    color: #fff;
+    background-color: #0a9396;
+    font-weight: normal;
+    font-size: 16px;
+}
+td{
+    padding: 10px 5px;
+    align-items: center;
+    justify-content: center;
+}
+
+.input-number{
+    text-align: center;
+    height: 23px;
+    width: 50px;
+    margin-left: 10px;
+    color: #005F73;
+    font-size: 15px;
+}
+.cart_info button
+{
+    margin-left: 15px;
+    margin-right: 5px;
+    width: 120px;
+    height: 25px;
+    background-color: #0a9396;
+    border-radius: 20px;
+    color: #fff;
+}
+.desc
+{
+    margin-left: 70px;
+}
+p{
+    font-size: 20px;
+    color: #000c73;
+    margin-bottom: 3px;
+}
+small{
+    font-size: 16px;
+}
+#save:hover{
+    width: 140px;
+    height: 27px;
+}
+#remove:hover{
+    color: #ff523b;
+    width: 140px;
+    height: 27px;
+}
+.total{
+    display: flex;
+    justify-content: flex-end;
+}
+.total table{
+    width: 100%;
+    max-width: 750px;
+    border-top: 3px solid #0a9396;
+}
+th:first-child
+{
+    width: 50%;
+}
+ td:last-child{
+    text-align: right;
+    padding-right: 20px;
+}
+th:last-child{
+    text-align: right;
+    padding-right: 20px;
+}
+.total th{
+    text-align: center;
+}
+.last {
+    
+    border-top: 2px dotted black;
+}
+.payment_button {
+    width: 50%;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: #0a9396;
+    border-radius: 20px;
+    margin-top: 10px;
+}
+.payment_button:hover{
+    color: rgb(49, 197, 5);
+}
+
+@media only screen and (max-width: 900px){
+    small{
+        margin-left: 10px;
+    }
+    .desc p{
+        display: none;
+    }
+    img{
+        margin: 10px;
+        margin-bottom: 10px;
+    }
+    .Quantity{
+        display: flex;
+        flex-direction: row;
+    }
+    .desc button{
+        margin: 5px 2px;
+    }
+    .desc{
+        margin-left: 10px;
+    } 
+    th:last-child
+    {
+        text-align: center;
+    }   
+}
