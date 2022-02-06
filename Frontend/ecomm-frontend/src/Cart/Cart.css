@@ -31,14 +31,22 @@ td{
 }
 
 .input-number{
-    text-align: center;
-    height: 23px;
-    width: 50px;
-    margin-left: 10px;
-    color: #005F73;
-    font-size: 15px;
+    border: 1px solid black;
+    margin-right: 60%;  
+    color: #000c73;
+    width: 90px;
 }
-.cart_info button
+#remove
+{
+    margin-left: 15px;
+    margin-right: 5px;
+    width: 120px;
+    height: 25px;
+    background-color: #0a9396;
+    border-radius: 20px;
+    color: #fff;
+}
+#save
 {
     margin-left: 15px;
     margin-right: 5px;
@@ -61,13 +69,13 @@ small{
     font-size: 16px;
 }
 #save:hover{
-    width: 140px;
-    height: 27px;
+    background-color: #002e73d0;
+    color: #fff;
+    
 }
 #remove:hover{
-    color: #ff523b;
-    width: 140px;
-    height: 27px;
+    background-color: #ff523bcc;
+    color: #fff;
 }
 .total{
     display: flex;
@@ -77,9 +85,9 @@ small{
     width: 100%;
     max-width: 750px;
     border-top: 3px solid #0a9396;
+    text-align: left;
 }
-th:first-child
-{
+th:first-child{
     width: 50%;
 }
  td:last-child{
@@ -94,7 +102,6 @@ th:last-child{
     text-align: center;
 }
 .last {
-    
     border-top: 2px dotted black;
 }
 .payment_button {
@@ -107,9 +114,6 @@ th:last-child{
     border-radius: 20px;
     margin-top: 10px;
 }
-.payment_button:hover{
-    color: rgb(49, 197, 5);
-}
 
 @media only screen and (max-width: 900px){
     small{
@@ -119,21 +123,19 @@ th:last-child{
         display: none;
     }
     img{
-        margin: 10px;
+        margin: 12%;
         margin-bottom: 10px;
-    }
-    .Quantity{
-        display: flex;
-        flex-direction: row;
     }
     .desc button{
         margin: 5px 2px;
     }
     .desc{
-        margin-left: 10px;
+        margin-left: -2px;
+        display: flex;
+        flex-direction: column;
     } 
-    th:last-child
-    {
-        text-align: center;
-    }   
+    .payment_button{
+        width: 100%;
+        margin-left: 25%;
+    } 
 }

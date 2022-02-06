@@ -18,14 +18,14 @@ function Cart() {
                         <img src={headphone} alt="headphone"/>
                         <div className="desc">
                             <p>Sony WH-CH510 Wireless On-Ear</p>
-                            <small>Price : ₹2499</small><br/><br/>
+                            <small>Price : ₹2499</small><br/>
                             <button id="remove">Remove</button>
                             <button id="save">Save for Later</button>
                         </div>
                     </div>
                 </td>
                 <td>
-                    <input type="number" value="1" min="0" className="input-number"/>
+                    <input type="number" className="input-number"/>
                 </td>
                 <td>₹2499</td>
             </tr>
@@ -33,7 +33,7 @@ function Cart() {
             <div className="total">
                 <table>
                    <tr>
-                       <th colspan="2">CART TOTAL</th>
+                       <th colSpan="2">CART TOTAL</th>
                     </tr>
                     <tr>
                        <td>Sub Total</td>
