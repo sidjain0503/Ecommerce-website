@@ -12,6 +12,7 @@
             background-color: rgb(35, 47, 62);
             padding: 10px;
             text-align: center;
+            width: 100%;
             font-size: 18px;
             margin: 0px;
             font-family: montserrat;
@@ -35,6 +36,7 @@
 
         nav{
             display: flex;
+            width: 100%;
             position: sticky;
             top: 0px;
             justify-content: space-between;
