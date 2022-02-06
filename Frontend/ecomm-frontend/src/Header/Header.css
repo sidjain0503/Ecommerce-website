@@ -19,6 +19,7 @@ header{
 }
 
 
+
 a, button{
     font-family: montserrat;
     font-weight: 500;
@@ -43,6 +44,7 @@ nav{
     padding: 10px 5%;
     background-color: #005f73;
 }
+
 
 nav>a{
     transition: all .4s ease;

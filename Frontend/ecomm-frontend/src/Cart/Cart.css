@@ -1,0 +1,141 @@
+.cart_container{
+    margin: 80px 20px;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+img{
+   object-fit: contain;
+   width: 100px;
+   height: 100px;
+   margin-right: 10px;
+   margin-top: 10px;
+}
+.cart_info{
+   display: flex;
+   flex-wrap: wrap;
+}
+th{
+    text-align: left;
+    padding: 15px;
+    color: #fff;
+    background-color: #0a9396;
+    font-weight: normal;
+    font-size: 16px;
+}
+td{
+    padding: 10px 5px;
+    align-items: center;
+    justify-content: center;
+}
+
+.input-number{
+    border: 1px solid black;
+    margin-right: 60%;  
+    color: #000c73;
+    width: 90px;
+}
+#remove
+{
+    margin-left: 15px;
+    margin-right: 5px;
+    width: 120px;
+    height: 25px;
+    background-color: #0a9396;
+    border-radius: 20px;
+    color: #fff;
+}
+#save
+{
+    margin-left: 15px;
+    margin-right: 5px;
+    width: 120px;
+    height: 25px;
+    background-color: #0a9396;
+    border-radius: 20px;
+    color: #fff;
+}
+.desc
+{
+    margin-left: 70px;
+}
+p{
+    font-size: 20px;
+    color: #000c73;
+    margin-bottom: 3px;
+}
+small{
+    font-size: 16px;
+}
+#save:hover{
+    background-color: #002e73d0;
+    color: #fff;
+    
+}
+#remove:hover{
+    background-color: #ff523bcc;
+    color: #fff;
+}
+.total{
+    display: flex;
+    justify-content: flex-end;
+}
+.total table{
+    width: 100%;
+    max-width: 750px;
+    border-top: 3px solid #0a9396;
+    text-align: left;
+}
+th:first-child{
+    width: 50%;
+}
+ td:last-child{
+    text-align: right;
+    padding-right: 20px;
+}
+th:last-child{
+    text-align: right;
+    padding-right: 20px;
+}
+.total th{
+    text-align: center;
+}
+.last {
+    border-top: 2px dotted black;
+}
+.payment_button {
+    width: 50%;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: #0a9396;
+    border-radius: 20px;
+    margin-top: 10px;
+}
+
+@media only screen and (max-width: 900px){
+    small{
+        margin-left: 10px;
+    }
+    .desc p{
+        display: none;
+    }
+    img{
+        margin: 12%;
+        margin-bottom: 10px;
+    }
+    .desc button{
+        margin: 5px 2px;
+    }
+    .desc{
+        margin-left: -2px;
+        display: flex;
+        flex-direction: column;
+    } 
+    .payment_button{
+        width: 100%;
+        margin-left: 25%;
+    } 
+}
