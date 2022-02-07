@@ -3,6 +3,8 @@ import './Cart.css';
 import headphone from './headphone_image.jpg';
 
 function Cart() {
+   
+
   return <div>
     
         <div className="cart_container">
@@ -25,7 +27,7 @@ function Cart() {
                     </div>
                 </td>
                 <td>
-                    <input type="number" className="input-number"/>
+                    <input type="number" className="input-number" />
                 </td>
                 <td>₹2499</td>
             </tr>

@@ -1,6 +1,7 @@
+// The schema for storing products : basically the structure of our product 
+
 const mongoose = require("mongoose");
 
-// The schema for storing products
 // ************************************************************************************************
 const product = mongoose.Schema({
   name: {
