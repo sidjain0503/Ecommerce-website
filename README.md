@@ -1,6 +1,6 @@
 # Tech-buy : Online tech store 
 
-A MERN stack ecommerce website . 
+A MERN stack ecommerce website.  
 
 ## Run Locally
 
@@ -10,7 +10,8 @@ Clone the project
   git clone https://github.com/sidjain0503/Ecommerce-website
 ```
 
-Go to the project directory
+## Frontend
+Go to the project Frontend directory
 
 ```bash
   cd Ecommerce-website/frontend/ecomm-frontend
@@ -33,6 +34,18 @@ Start the server
   npm run start
 ```
 
+## Backend
+Go to the project Backend directory
+
+```bash
+  cd Ecommerce-website/
+```
+
+Start backend
+
+```bash
+   npm run start
+```
 
 ## Tech Stack
 
