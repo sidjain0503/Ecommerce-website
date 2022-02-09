@@ -1,6 +1,7 @@
+// The schema for storing products : basically the structure of our product 
+
 const mongoose = require("mongoose");
 
-// The schema for storing products
 // ************************************************************************************************
 const product = mongoose.Schema({
   name: {
@@ -25,20 +26,21 @@ const product = mongoose.Schema({
   category: {
     type: String,
     required: true,
-    enum: ["Category1", "Category2", "Category3"],
+    enum: ["Tech", "Category2", "Category3"],
   },
   discription: {
     type: String,
     required: true,
-  },
-  reviews: [
-    {
-      userID: { type: mongoose.Schema.ObjectId, ref: "User", required: true },
-      name: { type: String, required: true },
-      rating: { type: Number, required: true },
-      comment: { type: String, required: true },
-    },
-  ],
+  }
+  // ,
+  // reviews: [
+  //   {
+  //     userID: { type: mongoose.Schema.ObjectId, ref: "User", required: true },
+  //     name: { type: String, required: true },
+  //     rating: { type: Number, required: true },
+  //     comment: { type: String, required: true },
+  //   },
+  // ],
 });
 // ************************************************************************************************
 
