@@ -63,6 +63,7 @@ Start backend
 - [@Dityaa26](https://www.github.com/Dityaa26)
 - [@Ashutoshnishadji](https://www.github.com/Ashutoshnishadji)
 - [@sagar-nishad](https://www.github.com/sagar-nishad)
+- [@krsahu123](https://www.github.com/krsahu123)
 - [@sidjain0503](https://www.github.com/sidjain0503)
 
 
