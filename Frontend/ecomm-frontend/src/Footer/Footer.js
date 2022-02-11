@@ -3,11 +3,11 @@ import './Footer.css';
 
 function Footer() {
   return <div>
-      <footer class="footer">
-        <div class="container">
-            <div class="row">
+      <footer className="footer">
+        <div className="container">
+            <div className="row">
 
-                <div class="footer-col">
+                <div className="footer-col">
                     <h4>Company</h4>
                     <ul>
                         <li><a href="#">About Us</a></li>
@@ -17,7 +17,7 @@ function Footer() {
                     </ul>
                 </div>
 
-                <div class="footer-col">
+                <div className="footer-col">
                     <h4>Get Help</h4>
                     <ul>
                         <li><a href="#">FAQ</a></li>
@@ -27,7 +27,7 @@ function Footer() {
                     </ul>
                 </div>
 
-                <div class="footer-col">
+                <div className="footer-col">
                     <h4>Make Money With Us</h4>
                     <ul>
                         <li><a href="#">Sell Here</a></li>
@@ -36,13 +36,13 @@ function Footer() {
                     </ul>
                 </div>
 
-                <div class="footer-col">
+                <div className="footer-col">
                     <h4>Follow</h4>
-                    <div class="social-links">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <div className="social-links">
+                        <a href="#"><i className="fab fa-facebook-f"></i></a>
+                        <a href="#"><i className="fab fa-twitter"></i></a>
+                        <a href="#"><i className="fab fa-instagram"></i></a>
+                        <a href="#"><i className="fab fa-linkedin-in"></i></a>
                     </div>
                 </div>
 

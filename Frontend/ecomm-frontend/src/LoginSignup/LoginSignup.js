@@ -22,7 +22,7 @@ function LoginSignup() {
   return <div>
       {/* Ayushi : Write your code here */}
       <div className="login-register-container">
-      <div className="login-register-box" style={{ backgroundImage: `url(${background})` }}>
+      <div className="login-register-box" >
           <ReactCardFlip className="inner-box" isFlipped={Flipped} flipDirection="horizontal">
               <div className="front">
                   <h2>LOGIN</h2>

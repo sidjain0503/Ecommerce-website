@@ -3,6 +3,8 @@ import './Cart.css';
 import headphone from './headphone_image.jpg';
 
 function Cart() {
+   
+
   return <div>
     
     <h1>Shopping Cart</h1>
@@ -22,6 +24,7 @@ function Cart() {
                            <button id="save">Save for Later</button>
                        </div>
                     </div>
+
                 </div>
                 <div class="b">
                     <h4>QUANTITY</h4>
