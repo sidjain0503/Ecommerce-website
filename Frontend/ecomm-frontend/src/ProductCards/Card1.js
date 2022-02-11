@@ -1,21 +1,15 @@
 import React from "react";
 import "./Card1.css";
 
-function Card1() {
+function Card1({title,image,desc,price}) {
   return (
-    <div className="Contaner">
-      <div className="productHeader">
-        <h2>Title</h2>
-      </div>
-      <div className="productBody">
-        <img
-          src="https://images-eu.ssl-images-amazon.com/images/G/31/img21/CEPC/Clearance/May21/V238940049_IN_PC_BAU_Edit_Creation_Laptops1x._SY304_CB667377205_.jpg"
-          alt=""
-        />
-      </div>
-      <div className="productFooter">
-        <a href="Some Where"> See More</a>
-      </div>
+    <div className="product">
+        <img src={image} alt="product" />
+        <h4> {title}</h4>
+        <h4>{desc}</h4>
+        <h4>Rs. {price}.00</h4>
+        <button className="pbutton">Add to basket</button>
+
     </div>
   );
 }

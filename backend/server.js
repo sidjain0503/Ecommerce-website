@@ -1,4 +1,4 @@
-//connecting to database
+//This file is for connecting to database
 
 const connection =()=>{
   const mongoose = require("mongoose");
