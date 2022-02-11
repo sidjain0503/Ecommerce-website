@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Bebas+Neue&family=Road+Rage&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -7,17 +8,24 @@
 }
 
 header{
-    display: flex;
-    justify-content: space-between;
-    color: white;
-    background-color: #0a9396;
-    padding: 10px;
-    text-align: center;
-    font-size: 18px;
-    margin: 0px;
-    font-family: montserrat;
+    position: sticky;
+    top: 0;
 }
 
+h1{
+    text-align: center;
+    position: sticky;
+    top: 0;
+    color: white;
+    background-color: rgb(26, 26, 26);
+    padding: 12px;
+    font-family: 'Bebas Neue', cursive;
+}
+
+#space{
+    background-color: rgb(46, 46, 46);
+    padding: 1px;
+}
 
 
 a, button{
@@ -37,12 +45,10 @@ a:hover{
 
 nav{
     display: flex;
-    position: sticky;
-    top: 0px;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 5%;
-    background-color: #005f73;
+    padding: 20px 5%;
+    background-color: rgb(26, 26, 26);
 }
 
 
@@ -51,32 +57,30 @@ nav>a{
 }
 
 nav>a:hover{
-    color: black;
+    color: yellow;
 }
 
-
-
 input{
-    padding: 10px 50px;
-    border-radius: 5px;
-    color: rgb(160, 160, 160);
+    padding: 8px 40px;
+    border-radius: 20px;
+    color: rgb(0, 0, 0);
     font-family: montserrat, sans-serif;
     border: none;
 }
 
 #srch{
     color: white;
-    padding: 10px 18px;
-    background-color: #005f73;
+    padding: 8px 18px;
+    background-color: rgb(46, 46, 46);
     border: none;
-    border-radius: 5px;
+    border-radius: 20px;
     cursor: pointer;
     transition: all .3s ease 0s;
 }
 
 #srch:hover{
-    background-color: #0ecccf;
-    color: black;
+    background-color: rgb(85, 85, 85);
+    color: yellow;
 }
 
 main{
@@ -92,17 +96,14 @@ section{
     font-family: montserrat;
     
 }
-.opts{
-    font-size: 25px;
-    cursor: pointer;
-}
+        
 
 select{
     color: white;
-    padding: 9px 18px;
-    background-color: #0cabad;
+    padding: 8px 40px;
+    background-color: rgb(46, 46, 46);
     border: none;
-    border-radius: 5px;
+    border-radius: 20px;
     cursor: pointer;
     font-family: montserrat;
 }

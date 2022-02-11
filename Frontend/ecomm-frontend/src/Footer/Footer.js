@@ -3,9 +3,12 @@ import './Footer.css';
 
 function Footer() {
   return <div>
-      <footer className="footer">
-        <div className="container">
-            <div className="row">
+
+      
+      <footer class="footer">
+        <div class="container">
+            <div class="row">
+
 
                 <div className="footer-col">
                     <h4>Company</h4>
@@ -49,6 +52,7 @@ function Footer() {
             </div>
         </div>
     </footer>
+
   </div>;
 }
 
