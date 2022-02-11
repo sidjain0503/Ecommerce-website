@@ -27,6 +27,7 @@ h1{
     padding: 1px;
 }
 
+
 a, button{
     font-family: montserrat;
     font-weight: 500;
@@ -49,6 +50,7 @@ nav{
     padding: 20px 5%;
     background-color: rgb(26, 26, 26);
 }
+
 
 nav>a{
     transition: all .4s ease;
