@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Card1 from "./Card1";
-import Card2 from "./Card2";
+// import Card2 from "./Card2";
 import axios from "axios";
 // import Card2 from './Card2'
 
@@ -16,10 +16,10 @@ function Cards() {
     });
   }, []);
   return (
-    <div className="cards">
+    <section className="cards">
       
-      {products&& products.map(product => <Card1 key={product._id} name={product.name} img={product.productImage}/>)}
-    </div>
+      {products&& products.map(product => <Card1 title={product.name} image={product.productImage} price={product.price} desc={product.description}/>)}
+    </section>
   );
 }
 

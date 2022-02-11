@@ -1,45 +1,76 @@
-.Contaner{
-    margin: 10px;
-    padding: 20px 15px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+.product{
+    box-shadow: 0 0 40px 20px rgb(0 0 0 / 5%);
+
 }
-.productHeader >h2{
-    /* font-family: "Amazon Ember", Arial, sans-serif; */
-    font-weight: 700;
-    font-size:21px;
-    margin-bottom: 10px;
-}
-.productBody{
-    
+#products > h1 {
+    /* text-align: left; */
+    margin: 5vmax ;
+    font-size: 2.5vmax;
+    border-bottom: 2px solid rgb(53, 49, 50);
+    padding: 1vmax ;
+    width: 10vw;
+
+  }
+  .product>h4{
+      color: #161615;
+      font-size: 18px;
+      margin: 10px 0px 5px 0px;
+      font-weight: bolder;
+  }
+  
+  .productsContainer {
     
     display: flex;
     justify-content: center;
-    align-items: center;
+    flex-wrap: wrap;
+    height: 100%;
+    max-width: 90vw;
+    margin: auto;
 
+  }
+  ::-webkit-scrollbar {
+    display: none;
 }
-.productBody > img{
-    /* margin-right: 15px; */
-    max-height: 268px;
-    max-width: 335px;
-    object-fit: contain;
-    margin-bottom: 10px;
-}
-.productFooter{
-    padding-top: 10px;
-}
-.productFooter > a{
-    text-decoration: none;
-    color: #005F73;
-    font-size: 13px;
-    font-weight: bold;
-
-    /* font-family: "Amazon Ember", Arial, sans-serif; */
-}
-a:hover {
-    text-decoration: underline;
+  
+  .product {
+    
+    transition: all 0.3s;
     cursor: pointer;
-    color: #9B2226;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1vmax;
+    
+  }
+  .product > img {
+    width: 25vmax;
+  }
+  
+ 
+  .pbutton{
+    cursor: pointer;
+    padding: 5px;
+    background: #161615;
+    margin-top: 10px;
+    border-color:0.5px #53514a #747169 #a09f9b;
+    border-style: solid;
+    border-width: 1px;
+    color: rgb(255, 253, 253);
+    display: block;
+    width: 25vmax;
+    height: 3vmax;
+    margin: auto;
+    font-weight: 800;
+    font-size: 18px;
+   
+}
+  .product:hover {
+    transform: translateY(-10px);
+  background-color: rgba(235, 232, 232, 0.445);
+
+}
+
+.button:hover{
+  background-color: rgb(65, 63, 63);
+  color: white;
 }

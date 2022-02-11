@@ -7,10 +7,7 @@ module.exports.productUpload =(req,res)=>{
     const product = new Product({
       name: req.body.name,
       ratings: req.body.ratings,
-      productImage :{
-        data: req.file.filename,
-        contentType: 'image/png/jpg'
-      },
+      productImage: req.body.productImage,
       price:req.body.price,
       stock:req.body.stock,
       category:req.body.category,
@@ -19,15 +16,15 @@ module.exports.productUpload =(req,res)=>{
   
 
     //This code is commented for now ! The below code is  used to add  single products into the database
-      // product.save().then(()=>{
-      //   // console.log("added to mongodb successfully")
-      //   res.send("added to mongodb successfully")
-      // }).catch((err)=>{
-      //   console.log(err)
-      // });
+      product.save().then(()=>{
+        // console.log("added to mongodb successfully")
+        res.send("added to mongodb successfully")
+      }).catch((err)=>{
+        console.log(err)
+      });
 
       //Comment the below two lines if working with database
-      res.send(req.file)
+      // res.send(req.body)
       // res.send(req.body)
    
 }

@@ -13,6 +13,10 @@ const product = mongoose.Schema({
     type: Number,
     default: 0,
   },
+  productImage:{
+    type:String,
+    required:true
+  },
   price: {
     type: Number,
     required: true,
@@ -28,7 +32,7 @@ const product = mongoose.Schema({
     required: true,
     enum: ["Tech", "Category2", "Category3"],
   },
-  discription: {
+  description: {
     type: String,
     required: true,
   }
