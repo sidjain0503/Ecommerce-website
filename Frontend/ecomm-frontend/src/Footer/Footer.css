@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300&display=swap');
-@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Bebas+Neue&family=Road+Rage&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -23,7 +23,7 @@ ul{
 }
 
 .footer{
-    background-color: #0a9396;/*Main Background*/
+    background-color: rgb(26, 26, 26);/*Main Background*/
     padding: 50px 0px;
 }
 
@@ -46,7 +46,7 @@ ul{
     position: absolute;
     bottom: -10px;
     height: 2px;
-    background-color: #005f73;/*Underline*/
+    background-color: rgb(46, 46, 46);/*Underline*/
     box-sizing: border-box;
     width: 60px;
 }
@@ -72,7 +72,7 @@ ul{
     display: inline-block;
     height: 40px;
     width: 40px;
-    background-color: #0cabad;
+    background-color: rgb(46, 46, 46);
     margin: 0 10px 10px 0;
     text-align: center;
     line-height: 40px;
@@ -83,6 +83,6 @@ ul{
 
 .footer-col .social-links a:hover{
 
-    background-color: #0ecccf;
+    background-color: rgb(85, 85, 85);
     color: black;
 }
