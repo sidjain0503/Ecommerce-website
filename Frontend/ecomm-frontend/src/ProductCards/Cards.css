@@ -1,3 +1,7 @@
 .cards{
     display: flex;
-    overflow-x: scroll;}
+    overflow-x: scroll;
+    position: relative;
+    margin: 0px 75px 0px 75px;
+    position: relative;
+}
