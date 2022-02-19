@@ -43,7 +43,8 @@
     
   }
   .product > img {
-    width: 25vmax;
+      margin-top: 10%;
+    width: max-content;
   }
   
  

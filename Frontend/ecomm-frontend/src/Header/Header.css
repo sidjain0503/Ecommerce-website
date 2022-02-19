@@ -6,13 +6,14 @@
     box-sizing: border-box;
     font-family: montserrat;
 }
-
-header{
-    position: sticky;
+.Header{
+    position: relative;
     top: 0;
 }
 
-h1{
+
+
+header>h1{
     text-align: center;
     position: sticky;
     top: 0;

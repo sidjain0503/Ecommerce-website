@@ -7,6 +7,7 @@ import Footer from "./Footer/Footer";
 import Cart from "./Cart/Cart";
 import Cards from "./ProductCards/Cards";
 import Productpage from './Product/Productpage';
+import Card2 from './ProductCards/Card2';
 
 function App() {
 
@@ -36,7 +37,10 @@ function App() {
 
             <Route path="/">
             <Header  />
+  
+            <Cards />
                 <Cards />
+                
                 <Footer/>
             </Route>
 
