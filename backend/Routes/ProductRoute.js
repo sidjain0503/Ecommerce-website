@@ -17,8 +17,6 @@ const storage = multer.diskStorage({
 
 const upload = multer({ storage: storage })
 
-
-
 //handle routes
 const { productUpload, productShow } = require('../Controllers/ProductController');
 
