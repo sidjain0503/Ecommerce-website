@@ -4,6 +4,8 @@ const Product = require('../Models/productModel')
 
 // Product upload 
 module.exports.productUpload =(req,res)=>{
+
+  
     const product = new Product({
       name: req.body.name,
       ratings: req.body.ratings,
