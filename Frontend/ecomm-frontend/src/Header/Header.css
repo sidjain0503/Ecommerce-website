@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: montserrat;
+    /* font-family: montserrat; */
 }
 .Header{
     position: relative;
@@ -63,10 +63,11 @@ nav>a:hover{
 
 input{
     padding: 8px 40px;
-    border-radius: 20px;
+        border-radius: 3px;
     color: rgb(0, 0, 0);
     font-family: montserrat, sans-serif;
     border: none;
+    margin : 5px;
 }
 
 #srch{

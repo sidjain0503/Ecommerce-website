@@ -41,5 +41,20 @@ module.exports.productShow =(req,res)=>{
   });
  
 }
+
+//single Product Show
+
+module.exports.singleproductShow =async(req,res)=>{
+  const id = await req.params.id;
+  // console.log("id is ", id)
+  // res.send(id)
+
+  Product.findById(id).then((data)=>{
+    res.send(data)
+  }).catch((err)=>{
+    res.send(err)
+  });
+ 
+}
 // Product Update 
 // Product Delete
