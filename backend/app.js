@@ -8,12 +8,13 @@ const connection = require('./server')
 const productRouter = require('./Routes/ProductRoute')
 
 const UserRouter = require("./Routes/UserRouter")
-app.use(express.urlencoded());
+
 var fileupload = require("express-fileupload");
 express().use(fileupload());
 
 connection();  //database connection
-
+// app.use(cors());
+app.use(express.json());
 
 //route handling
 app.use(cors()); //This disables cors policy and allows to run both backend and frontend on the same device 

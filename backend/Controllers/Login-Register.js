@@ -5,6 +5,7 @@ const UserModel = require("../Models/userModel");
 
 
 
+
  module.exports.RegisterUser =    (req, res) => {
     var Userinfo = req.body;
     var Url = req.file;
@@ -35,6 +36,7 @@ const UserModel = require("../Models/userModel");
       }
     });
   }
+
 
 
 
