@@ -5,34 +5,7 @@ const UserModel = require("../Models/userModel");
 
 
 
- module.exports.RegisterUser =    (req, res) => {
-    var Userinfo = req.body;
-    var Url = req.file;
-    // console.log(Url);
-    var password;
-    bcrypt.hash(Userinfo.password, saltRound, (err, hash) => {
-      if (err) {
-        console.log(err);
-        req.send("passcode generate Error");
-      } else {
-        var newuser = new UserModel({
-          name: Userinfo.name,
-          email: Userinfo.email,
-          password: hash,
-          profileImageUrl: Url.path
-        });
-        newuser
-          .save()
-          .then(() => {
-            res.send("User added to MongoDB");
-          })
-          .catch((err) => {
-            console.log(err);
-            res.send("SOME ERR ");
-          });
-      }
-    });
-  }
+//  module.exports.RegisterUser =    
 
 
 

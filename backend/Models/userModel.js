@@ -29,6 +29,10 @@ const user = new mongoose.Schema({
       default: "user",
       enum: ["user", "admin"],
     },
+    date: {
+      type: Date,
+      default: Date.now
+    }
   });
   module.exports = mongoose.model("User", user);
   // ************************************************************************************************
