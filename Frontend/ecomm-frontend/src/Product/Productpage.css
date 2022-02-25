@@ -1,29 +1,37 @@
-.body {
-  
-    margin-right: 10px;
-    margin-top: 40px;
-    margin-bottom: 50px;
-    font: poppins;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Bebas+Neue&family=Road+Rage&display=swap');
+
+  .product_reviews{
+      transform: translateY(-10px);
+      margin-top: 0%;
   }
   
-  .Product_image img{
-      width: 70%;
-      height: 70%;
+  .Product_image >img{
+      width: 500px;
       object-fit: contain;
       margin-top: 100px;
-      margin-left: 40px;
-      margin-right: 40px; 
+      padding-left: 50px;
   }
   
   .Product_section{
+    width: 80%;
+    margin: auto;
+      margin-bottom: 50px;
+        font-family: 'Bebas Neue', cursive;
       display: flex;
-      justify-content: space-around;
+      justify-content: space-between;
+  }
+  
+  .Product_image{
+      width: 40%;
   }
   
   .product_details
   {
-     margin-right: 30px;
-     width: 80%;
+      width: 60%;
+    display: flex;
+    flex-direction: column;
+    margin: 100px;
   }
   
   .cart_button {
@@ -33,32 +41,31 @@
       justify-content: center;
       align-items: center;
       color: white;
-      background-color: red;
-      border-radius: 20px;
-      margin-left: 15px;
+      background-color: black;
+      margin-right: 15px;
       border: none;
+      font-size: medium;
   }
   
   .cart_button:hover {
-      background-color: maroon;
+      background-color: white;
+      color: black;
+      border: 2px solid black;
+      font-size: medium;
       transition: all ease 0.2s;
   }
   
   .product_name{
-      border-bottom: 1px solid #ccc;
       word-wrap: break-word;
-  }
-  
-  .product_reviews{
-      border-bottom: 1px solid #ccc;
-      padding-bottom: 10px;
-      padding-top: 10px;
+      font-size: 24px;
+      font-weight:bold;
   }
   
   .product_price
   {
-      border-bottom: 1px solid #ccc;
       padding-bottom: 15px;
+      transform: translateY(-5px);
+      font-size: 25px;
   }
   
   .button-wrapper
@@ -67,61 +74,49 @@
       margin-top: 30px;
   }
   
-  .button
-  {
-      height: 40px;
-      width: 25px;
-      color: white;
-      text-align: center;
-      background-color: grey;
-  }
-  
   .button:hover {
       background-color: black;
       transition: all ease 0.2s;
   }
   
-  .number
-  {
-      padding-right: 10px;
-      padding-left: 10px; 
-  }
-  
-  .status
-  {
-      font-size: 20px;
-      border-bottom: 1px solid #ccc;
-      padding-bottom: 15px;
-  }
-  
-  .status span
-  {
-      color: rgba(128, 218, 45, 0.993);
-  }
-  
   .review_button {
-      width: 190px;
-      height: 40px;
+      width: 200px;
+      height: 50px;
       justify-content: center;
       align-items: center;
       color: white;
-      background-color: red;
-      border-radius: 20px;
+      background-color: black;
       margin-top: 10px;
       border: none;
+      font-size: medium;
   }
   
-  .review_button:hover {
+  .review_button:hover {    
       
-      background-color: maroon;
+      background-color: white;
+      color: black;
+      border: 2px solid black;
+      font-size: medium;
       transition: all ease 0.2s;
   }
   
   .desc
   {
+      padding-top: 20px;
+      padding-bottom: 25px;
       display: block;
-      /* width: 600px; */
       word-wrap: break-word;
+      line-height: 1.6;
+      font-style: italic;
+      font-weight: 600;
+      letter-spacing: 1px;
+      word-spacing:8px;
+  }
+  
+  @media screen {
+      Page_section {
+          flex-direction: column;
+      }
   }
   
   @media only screen and (max-width: 900px) {

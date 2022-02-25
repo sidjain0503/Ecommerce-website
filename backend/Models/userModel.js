@@ -3,7 +3,13 @@ const mongoose = require("mongoose");
 // The schema for storing user data
 // ************************************************************************************************
 const user = new mongoose.Schema({
-    name: {
+    Firstname: {
+      type: String,
+      required: true,
+      maxLength: 30,
+      minLength: 3,
+    },
+    Lastname: {
       type: String,
       required: true,
       maxLength: 30,

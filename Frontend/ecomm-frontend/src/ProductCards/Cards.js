@@ -18,7 +18,7 @@ function Cards() {
   return (
     <section className="cards">
       
-      {products&& products.map(product => <Card1 title={product.name} image={product.productImage} price={product.price} desc={product.description}/>)}
+      {products&& products.map(product => <Card1 title={product.name} image={product.productImage} price={product.price} desc={product.description} id={product._id}/>)}
     </section>
   );
 }

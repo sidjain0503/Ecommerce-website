@@ -7,7 +7,7 @@ import Footer from "./Footer/Footer";
 import Cart from "./Cart/Cart";
 import Cards from "./ProductCards/Cards";
 import Productpage from './Product/Productpage';
-import Card2 from './ProductCards/Card2';
+// import Card2 from './ProductCards/Card2';
 
 function App() {
 
@@ -22,7 +22,7 @@ function App() {
             <Footer/>
             </Route>
 
-            <Route path="/product">
+            <Route path="/product/:id">
             <Header/>
             <Productpage/>
             <Footer/>
@@ -39,7 +39,6 @@ function App() {
             <Header  />
   
             <Cards />
-                <Cards />
                 
                 <Footer/>
             </Route>
