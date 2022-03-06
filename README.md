@@ -47,6 +47,9 @@ Start backend
    npm run start
 ```
 
+## Database
+Go to the project db  directory and import products.json on your mongodb  
+
 ## Tech Stack
 
 **Client:** React, Redux, 
