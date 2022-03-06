@@ -18,6 +18,11 @@
       font-weight: bolder;
   }
   
+  .link{
+    color: black;
+    margin-top: 10px;
+    font-size: 18px;
+  }
   .productsContainer {
     
     display: flex;

@@ -85,6 +85,18 @@ input{
     color: yellow;
 }
 
+.categories{
+    color: rgb(165, 165, 165);
+    
+}
+.categories>div{
+    position: relative;
+top: 100px;
+display: none;
+    padding: 10%;
+    background-color: aqua;
+    margin: 1px;
+}
 main{
     background-color: white;
 }
